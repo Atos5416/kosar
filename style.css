@@ -6,11 +6,8 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    
     position: relative;
-    
     background-repeat: no-repeat;
-
 
 }
 #button1{
@@ -24,4 +21,5 @@ body{
     border-width: 20px;
     margin: 50px;
     padding: 50px;
+    flex-direction: row;
 }
