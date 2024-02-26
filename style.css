@@ -21,5 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-    
+    border-width: 20px;
+    margin: 50px;
+    padding: 50px;
 }
