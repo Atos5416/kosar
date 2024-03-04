@@ -33,15 +33,22 @@
   <section id="pontszamitas">
     <h2>Pontszámítás</h2>
     <div class="pontszam">
-      <h3>Csapat 1</h3>
-      <p>Pontok: <span id="csapat1Pont">0</span></p>
-      <button onclick="adPont('csapat1')">Pont hozzáadása</button>
-    </div>
-    <div class="pontszam">
-      <h3>Csapat 2</h3>
-      <p>Pontok: <span id="csapat2Pont">0</span></p>
-      <button onclick="adPont('csapat2')">Pont hozzáadása</button>
-    </div>
+        <h3>Csapat 1</h3>
+        <p>Pontok: <span id="csapat1Pont">0</span></p>
+        <button onclick="adPont('csapat1', 1)">1 pont hozzáadása</button>
+        <button onclick="adPont('csapat1', 2)">2 pont hozzáadása</button>
+        <button onclick="adPont('csapat1', 3)">3 pont hozzáadása</button>
+      </div>
+      
+      <div class="pontszam">
+        <h3>Csapat 2</h3>
+        <p>Pontok: <span id="csapat2Pont">0</span></p>
+        <button onclick="adPont('csapat2', 1)">1 pont hozzáadása</button>
+        <button onclick="adPont('csapat2', 2)">2 pont hozzáadása</button>
+        <button onclick="adPont('csapat2', 3)">3 pont hozzáadása</button>
+      </div>
+      
+      <button onclick="resetPontok()">Pontok visszaállítása</button>
   </section>
 </main>
 
