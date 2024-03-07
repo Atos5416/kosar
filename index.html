@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kosárlabda Weboldal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Kosárlabda</h1>
+  <nav>
+    <ul>
+      <li><a href="#tortenet">Történet</a></li>
+      <li><a href="#szabalyok">Szabályok</a></li>
+      <li><a href="#pontszamitas">Pontszámítás</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="tortenet">
+    <h2>Kosárlabda története</h2>
+    <p>A kosárlabda egyik ősének tekinthető labdajátékot az amerikai bennszülöttek játszották. A maják és az aztékok változatában egy falra erősített fémgyűrűn kellett átütni a csapattagoknak egy golyót. A maják játéka kegyetlen volt: a vesztes csapatot feláldozták az isteneknek. A kosárlabdához hasonló játékokat már évszázadok óta játszanak; a legrégebbi ismert változata a „pok-ta-pok”, amelyet 3000 évvel ezelőtt a mexikói olmékok játszottak. A mai játékot 1891-ben alakította ki a kanadai Dr. James Naismith az USA-beli YMCA iskolában (Massachusetts). Célja az volt, hogy felkeltse tanítványai érdeklődését a sport iránt. „A véletlen segített: egy, a terem sarkában álló őszibarackos kosárba dobta a labdát, amikor hívatták. Visszatérve látta, hogy tanítványai az unalmas gyakorlatok helyett a kosárba való dobálással próbálkoznak. Megtetszett neki az ötlet, és két héten belül elkészült a játék tervezete.”
+
+      Naismith a játék megalkotásakor öt alapelvből építkezett: (1) a játékot gömbölyű labdával, kézzel játsszák; (2) a játékosok ne szaladhassanak a labdával; (3) a játékosok mozgása a pályán ne legyen korlátozva; (4) ne legyen durva érintkezés; (5) a labdát vízszintesen elhelyezett kapuba, a játékosoknál magasabbra kelljen dobni.</p>
+  </section>
+
+  <section id="szabalyok">
+    <h2>Kosárlabda szabályai</h2>
+    <h3>Személyi hibák (faultok)</h3>
+    <p>A játékosoknak tilos egy másik játékost:</p>
+    <ul>
+      <li>meglökni</li>
+      <li>megfogni</li>
+      <li>megütni</li>
+      <li>elgáncsolni</li>
+      <li>széttárt karral, lábbal, csípővel akadályozni az előrehaladásban.</li>
+    </ul>
+    <p>Ezen szabályok megszegéséért személyi hibát (fault) kap az elkövető. Ha dobás közben történt a fault, akkor büntetődobás(ok) következnek. Amennyiben sikeres volt a dobás egy büntetődobás következik. Amennyiben sikertelen, 2 vagy 3 dobás, attól függően, hogy hány pontot ért volna a dobás, ha sikeres lesz.</p>
+  </section>
+
+  <section id="pontszamitas">
+    <h2>Pontszámítás</h2>
+    <div class="pontszam">
+        <h3>Csapat 1</h3>
+        <p>Pontok: <span id="csapat1Pont">0</span></p>
+        <button onclick="adPont('csapat1', 1)">1 pont hozzáadása</button>
+        <button onclick="adPont('csapat1', 2)">2 pont hozzáadása</button>
+        <button onclick="adPont('csapat1', 3)">3 pont hozzáadása</button>
+      </div>
+      
+      <div class="pontszam">
+        <h3>Csapat 2</h3>
+        <p>Pontok: <span id="csapat2Pont">0</span></p>
+        <button onclick="adPont('csapat2', 1)">1 pont hozzáadása</button>
+        <button onclick="adPont('csapat2', 2)">2 pont hozzáadása</button>
+        <button onclick="adPont('csapat2', 3)">3 pont hozzáadása</button>
+      </div>
+      
+      <button onclick="resetPontok()">Pontok visszaállítása</button>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Kosárlabda Weboldal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
